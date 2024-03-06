@@ -11,7 +11,7 @@ type Props = {
 
 const Navigation = ({ user }: Props) => {
   return (
-    <div className="relative flex items-center justify-between p-4">
+    <div className="fixed inset-x-0 top-0 z-10 flex items-center justify-between p-4 text-center">
       <aside className="flex items-center gap-2">
         <Image
           src="./assets/plura-logo.svg"
@@ -21,7 +21,7 @@ const Navigation = ({ user }: Props) => {
         />
         <span className="text-xl font-bold">InsightWorks.</span>
       </aside>
-      <nav className="absolute left-[50%] hidden translate-x-[-50%] translate-y-[-50%] md:block">
+      <nav className="hidden md:block">
         <ul className="flex items-center justify-center gap-8">
           <li>
             <Link href="#">Pricing</Link>
